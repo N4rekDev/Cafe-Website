@@ -1,0 +1,282 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inconsolata", sans-serif;
+}
+
+nav {
+    position: fixed;
+    display: flex;
+    width: 100%;
+    height: 8vh;
+    background-color: black;
+    align-items: center;
+    top: 0;
+    z-index: 100;
+}
+
+nav a {
+    color: white;
+    width: 25%;
+    height: 70%;
+    text-align: center;
+    cursor: pointer;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+.home {
+    background-image: url(./images/coffeehouse.jpg);
+    width: 100%;
+    height: 70vh;
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    margin-top: 8vh;
+    position: relative;
+}
+
+.home h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 90px;
+    text-align: center;
+    font-weight: 400;
+}
+
+.home .working-time {
+    position: absolute;
+    left: 2%;
+    bottom: 2%;
+    font-size: 15px;
+    background-color: black;
+    padding: 5px;
+    color: white;
+}
+
+.home .p-address {
+    position: absolute;
+    right: 2%;
+    bottom: 2%;
+    font-size: 15px;
+    color: white;
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+.about {
+    position: relative;
+    margin: auto;
+    margin-top: 5%;
+    width: 50%;
+}
+
+.about h2{
+    position: absolute;
+    left: 50%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    width: auto;
+    text-align: center;
+    transform: translate(-50%);
+    letter-spacing: 4px;
+    padding: 0.5%;
+}
+
+.about p {
+    font-size: 18px;
+    text-align: left;
+}
+
+.about-p1 {
+    margin-top: 10%;
+}
+
+.about-p2 {
+    background-color: rgba(241, 241, 241, 0.785);
+    border-left: 6px solid #CCCCCCFF;
+    padding: 4%;
+    margin-top: 3%;
+
+}
+
+.about img {
+    width: 100%;
+    margin-top: 4%;
+}
+
+.about-p3 {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.menu {
+    margin: auto;
+    margin-top: 4%;
+    width: 50%;
+}
+
+.menu h2 {
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    width: auto;
+    text-align: center;
+    letter-spacing: 4px;
+    width: 18%;
+    padding: 0.3%;
+    margin: auto;
+}
+
+.headings {
+    box-shadow: 1px 1px 15px rgba(96, 95, 95, 0.445);
+    height: 5vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding-left: 20%;
+    padding-right: 20%;
+    font-family: "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+}
+
+.headings h3{
+    background-color: #616161FF;
+    padding: 0.3% 20%;
+    color: white;
+    margin: 13%;
+}
+
+.eat-drink {
+    width: 100%;
+    display: flex;
+    margin-top: 6%;
+    box-shadow: 0px 1px 20px rgba(96, 95, 95, 0.445);
+    margin-top: 0;
+    font-size: 20px;
+    justify-content: space-between;
+}
+
+.eat {
+    width: 45%;
+    margin: auto;
+}
+
+.drink {
+    width: 45%;
+}
+
+.gray {
+    color: gray;
+    font-size: 17px;
+}
+
+.coffee {
+    width: 100%;
+    margin-top: 5%;
+    opacity: 0.7;
+}
+
+#where h2{
+    width: 33%;
+    margin-top: 5%;
+}
+
+#where .p1 {
+    margin-top: 7%;
+    font-size: 18px;
+}
+
+#where img {
+    width: 100%;
+    opacity: 0.7;
+    margin-top: 3%;
+}
+
+#where .p2 {
+    margin-top: 3%;
+    font-size: 18px;
+    width: 90%;
+    line-height: 27px;
+}
+
+#where span  {
+    font-weight: 600;
+    background-color: black;
+    color: white;
+    padding: 0.7%;
+}
+
+.reserve {
+    margin-top: 5%;
+    font-size: 18px;
+}
+
+.reserve  span {
+    font-weight: 700;
+}
+
+input {
+    width: 100%;
+    height: 8vh;
+    margin-top: 3vh;
+    font-size: 18px;
+    border: 1px solid #CCCCCCFF;
+    padding: 2%;
+}
+
+input[type="button"] {
+    background-color: black;
+    color: white;
+    border: none;
+    cursor: pointer;
+    width: 20%;
+    height: 7vh;
+}
+
+input[type="button"]:hover {
+    background-color: rgba(128, 128, 128, 0.558);
+    color: black;
+}
+
+footer {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15%;
+}
+
+footer a {
+    color: black;
+    margin-left: 2%;
+}
+
+footer a:hover {
+    color: #04AA6DFF;
+}
+
+button {
+    width: 100%;
+}
